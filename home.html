@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <title>Contact Us Form</title>
+    <title>Compliments</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <nav>
+      <ol>
+        <li class="crumb"><a href="./home.html">Home</a></li>
+        <li class="crumb"><a href="./profile.html">Profile</a></li>
+        <li class="crumb"><a href="./about.html">About</a></li>
+      </ol>
+    </nav>
+
+    <content>
+      <p>Hello World</p>
+      <h1>
+        Welcome to my website. I love cats so please take a second to admire
+        this cute cat.
+      </h1>
+      <!-- insert hello world here -->
+
+      <img
+        onmouseover="compliment(this)"
+        src="_build/handouts/_images/Cat.png"
+      />
+      <h2>Contact Us</h2>
+      <form id="contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br /><br />
+
+        <label for="how-heard">How did you hear about this website?</label
+        ><br />
+        <label for="google">Google</label>
+        <input type="checkbox" id="google" name="how-heard" value="Google" />
+        <br />
+        <label for="friend">A friend</label>
+        <input type="checkbox" id="friend" name="how-heard" value="A friend" />
+        <br />
+        <label for="other">Other</label>
+        <input type="checkbox" id="other" name="how-heard" value="Other" />
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </content>
+
+    <script src="about.js"></script>
+  </body>
+  <h1>Compliments</h1>
+  <ul>
+    <li>You are incredibly talented!</li>
+    <li>Your positivity is contagious!</li>
+    <li>You have a great sense of style!</li>
+  </ul>
+</html>

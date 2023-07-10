@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Neighborhood Page</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: black;
+        margin: 20px;
+        font-size: 28px;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      body {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Dan Patch Neighborhood in Savage, Minnesota!</h1>
+
+    Dan Patch Neighborhood is a beautiful suburb in the South Metro of
+    Minnesota. It's home to wonderful families and beautiful nature parks. You
+    can also experience delicious cultural foods like Somali, Mexican and
+    Hawaiian at the many restaurants that we have here. All within the Savage
+    area. Come visit us!
+
+    <h2>Restaurants</h2>
+    <ul>
+      <li>
+        <a href="https://tinyurl.com/5n93xwd3">Sanag Restaurant Somali</a>
+      </li>
+      <li><a href="https://casadelimn.com/">Casa Deli Savage Mexican</a></li>
+      <li><a href="https://www.pauhanamn.com/"> Hawaiian Restaurant </a></li>
+    </ul>
+
+    <h2>Parks</h2>
+    <ul>
+      <li>
+        <a href="https://tinyurl.com/yzs5cd5u">OConnell Park</a>
+      </li>
+      <li>
+        <a href="https://tinyurl.com/y6tr7v89">Murphy-Hanrehan Park Reserve</a>
+      </li>
+      <li><a href="https://tinyurl.com/3yaued26">Hidden Valley Park</a></li>
+    </ul>
+
+    <h2>Coffee</h2>
+    <ul>
+      <li>
+        <a href="https://buzzcoffeeandcafe.com/">The Buzz Coffee Cafe</a>
+      </li>
+      <li><a href="https://tinyurl.com/ytu4bm99">Starbucks Coffee Cafe</a></li>
+      <li><a href="https://tinyurl.com/kyjjuejz">Arise Coffee Cafe</a></li>
+    </ul>
+
+    <h2>Amusement Parks</h2>
+    <ul>
+      <li>
+        <a href="http://www.valleyfair.com/">Valley Fair</a>
+      </li>
+    </ul>
+
+    <button id="recommendButton">Get Random Restaurant Recommendation</button>
+
+    <script>
+      // Function to choose a random restaurant recommendation
+      function chooseRandomRestaurant() {
+        var list = ["Sanag", "Casa Deli Savage", "Hawaiian Restaurant"];
+        var random = list[Math.floor(Math.random() * list.length)];
+
+        alert("Random Restaurant Recommendation: " + random);
+      }
+
+      // Add event listener to the button
+      var recommendButton = document.getElementById("recommendButton");
+      recommendButton.addEventListener("click", chooseRandomRestaurant);
+    </script>
+  </body>
+</html>
